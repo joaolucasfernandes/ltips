@@ -12,5 +12,5 @@ ENV APACHE_LOG_DIR="/var/log/apache2"
 LABEL description="Webserver"
 EXPOSE 80
 
-ENTRYPOINT ["/usr/bin/apachectl"]
+ENTRYPOINT ["/usr/sbin/apachectl"]
 CMD ["-D", "FOREGROUND"]
